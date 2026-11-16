@@ -1,22 +1,21 @@
+<!DOCTYPE html>
 <html>
-<head>
-<style>
-.navigation_bar {
-	font-family: "Times New Roman", serif;
-	text-align: right;
-	font-size: 1.375em;
-}
-</style>
-</head>
-
-
-
 <body>
-	<p class="navigation_bar">
-		<a href="login.html">Login</a>
-		<a href="about.html">About</a>
-		<a href="search.html">Search</a>
-	</p>
 	<h1>Welcome to our parking app! Click on a building or search to get started</h1>
+	<p style="border:1px solid grey;padding:9px;background-color:LightGray;font-size:1.15em;">
+	<img src="still_images/filter_icon.png" alt="Filter icon" style="float:right;width:25px;height:20px">
+	Search
+	</p>
+	<img src="still_images/campus_map.png" alt="Campus map" style="display:block; margin:0 auto;" usemap="#user_map">
+
+	<map name="user_map">
+		<!-- Library, education studies, university office building -->
+		<area shape="poly" coords="442,263,373,294,407,370,424,363,452,394,517,363,507,322,469,297" alt="Library" href="selected_buildings/library.html" target="_blank">
+		<area shape="poly" coords="237,211,269,195,304,255,274,271" alt="Education and Integrative Studies" href="selected_buildings/edu_int_studies.html" target="_blank">
+		<area shape="poly" coords="187,115,224,93,274,183,233,204" alt="University Office Building" href="selected_buildings/uni_office.html" target="_blank">
+
+
+
+	</map>
 </body>
 </html>
